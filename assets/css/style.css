@@ -9,11 +9,15 @@
 }
 
 .heading {
-    background-color: green; 
+    background: url("../images/master.jpg");
+    padding-top: 50px;
+}
+
+.bg-color-name-title {
+     background: url("../images/master.jpg");
 }
 
 /*---------------------------------------------- heading --*/
-
 
 .logo {
     background: url("../images/master.jpg");
@@ -30,6 +34,10 @@
     padding: 0;
 }
 
+.hvr-sweep-to-bottom {
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
 
 .heading {
     position: relative;
@@ -46,7 +54,7 @@
     font-size: small;
     border: 0;
     margin: 0;
-    
+
 }
 
 .menuitem {
@@ -103,4 +111,37 @@
 
 .list-inline-item:not(:last-child) {
     margin: 0;
+    padding: 0;
+}
+
+
+
+.photo {
+    min-width: 50%;
+}
+
+#nav {
+    margin: 0;
+    padding: 0;
+}
+
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
+/*---------------------------------------------- sections home --*/
+
+.home-container {
+    border: solid;
+}
+
+.book-container {
+    border: solid;
+}
+
+.booking-form {
+    position: absolute;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
 }

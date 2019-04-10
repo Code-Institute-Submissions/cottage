@@ -1,3 +1,4 @@
+
 /*---------------------------------------------- colors --*/
 
 .ui-menu-color-home {
@@ -15,6 +16,7 @@
 
 .bg-color-name-title {
      background: url("../images/master.jpg");
+     background-size: cover;
 }
 
 /*---------------------------------------------- heading --*/
@@ -97,13 +99,13 @@
     }
 }
 
-.list-inline-item {
+.list-inline-item: {
     border: 0;
     margin: 0;
     padding: 0;
 }
 
-.list-inline {
+.list-inline:not(:last-child) {
     border: 0;
     margin: 0;
     padding: 0;
@@ -112,6 +114,7 @@
 .list-inline-item:not(:last-child) {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 
@@ -131,17 +134,22 @@
 }
 /*---------------------------------------------- sections home --*/
 
-.home-container {
-    border: solid;
-}
-
-.book-container {
-    border: solid;
-}
 
 .booking-form {
     position: absolute;
     top: 0;
     background-color: green;
     border: 2px solid #4CAF50;
+}
+
+.thumbnail:hover {
+        transform: scale(1.05) !important;
+        transition: -ms-transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s, 
+        -webkit-transform 450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 
+        450ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s !important;
+}
+
+
+.navbar-list {
+    display: inline;
 }

@@ -10,17 +10,20 @@
     background-color: #f3f1ed;
 }
 
-.heading {
-    padding-top: 50px;
-}
-
 .bg-color-name-title {
      background-size: cover;
 }
 
-/*---------------------------------------------- hover --*/
+/*---------------------------------------------- media --*/
 
-
+@media (max-width: 400px) {
+    .col {
+        position: fixed;
+        top: 0;
+        display: inline;
+    }
+    
+}
 
 
 /*---------------------------------------------- heading --*/
@@ -50,6 +53,7 @@
     text-align: center;
     height: 240px;
     opacity: 20;
+    padding-top: 50px;
 }
 
 .menuitem {
@@ -111,6 +115,19 @@
     padding: 0;
 }
 
+.price {
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    color: black;
+    border-color: black;
+    max-height: 100px;
+    position: fixed;
+    top: 100px;
+    z-index: +1;
+    float: right;
+}
+
 /*---------------------------------------------- sections home --*/
 
 
@@ -142,5 +159,5 @@ ul {
 }
 
 .thumbnail {
-    height: 200px;
+    height: 30%;
 }

@@ -13,11 +13,11 @@
 </head>
 
 <body>
+<!-----------------------------------------------------------------Main Picture-->
     <div class="row no-gutters top-page">
         <a class="col-md-4 logo" href="../index.html"></a>
-
+<!-----------------------------------------------------------------menu-->
         <div class="col-md-8">
-
             <div class="row no-gutters">
                 <div class="col">
                     <ol id="nav" class="list-inline menucontainer">
@@ -38,23 +38,24 @@
                         </li>
                     </ol>
                 </div>
-
+<!-----------------------------------------------------------------Heading of page-->
             </div>
             <div class="row no-gutters bg-color-name-title">
                 <div class="col heading">
                     <h1 class="name">Loaning Cottage</h1>
                     <h2 class="phrase">Your home in the Dales</h2>
                 </div>
+                
             </div>
         </div>
     </div>
     </div>
-
+<!-----------------------------------------------------------------LHS page - pictures-->
     <section class="row no-gutters">
         <div class="photo-container d-none d-md-block col-md-4">
             <div class="row no-gutters">
                 <div class="col-6">
-                    <div class="outside">
+                    <div class="thumbnail hvr-grow">
                         <a href="/assets/images/outside.jpg">
                             <img src="/assets/images/outside.jpg" alt="Outside" style="width:100%;height:250px">
                       </a>
@@ -98,6 +99,7 @@
                 </div>
             </div>
         </div>
+<!-----------------------------------------------------------------Middle content-->
         <div class="col-12 col-md-4">
             <div class="home-container">
                 Welcome to Loaning Cottage. This cosy holiday house in the Yorkshire Dales is available for holiday rental all year and provides the perfect base for exploring the beautiful area of the Yorkshire Dales with its glorious landscape, fascinating history
@@ -113,25 +115,27 @@
             <div class="reviews">
                 <div class="col-12">
                     <h3>Reviews</h3>
-                    <div class="review-1">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, unde?<br><br>
-                    </div>
-                    <div class="review-2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias itaque dolore facilis ex beatae voluptatem ratione sit reprehenderit at, repellendus repellat vero magnam nobis ad delectus, odio perspiciatis obcaecati unde?<br><br>
-                    </div>
-                    <div class="review-3">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nemo quo nisi temporibus perspiciatis voluptate illum quia quibusdam ipsa rerum.<br>
-                    </div>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Had an absolutley brilliant time in Loaning cottage. Great location to walk Penn Hill from, and cosy fire to warm up to.</p>
+                        <footer class="blockquote-footer">James from<cite title="Source Title"> London</cite></footer>
+                    </blockquote>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Lovely clean cottage, lovely village.</p>
+                        <footer class="blockquote-footer">Fiona from<cite title="Source Title"> Galway</cite></footer>
+                    </blockquote>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">The cottage was warm and cosy. The village is beautiful and enchanting.</p>
+                        <footer class="blockquote-footer">Carol from<cite title="Source Title"> Cardiff</cite></footer>
+                    </blockquote>
                     <hr>
-
                 </div>
             </div>
         </div>
+<!-----------------------------------------------------------------RHS booking details-->
         <div class="col-md-4 d-none d-md-block">
             <div class="row">
                 <div class="col">
                     <form>
-
                         <div class="booking-form">
                             <h3>Check Availibility</h3>
                             Guests: <br>
@@ -151,17 +155,16 @@
                             </div>
                         </div>
                 </div>
-
                 </form>
-
             </div>
         </div>
+<!-----------------------------------------------------------------booking modal-->    
     </section>
     <div class="modal" tabindex="-1" role="dialog" id="bookNow">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h5 class="modal-title">Booking Details</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -173,7 +176,7 @@
                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">Example select</label>
+                            <label for="exampleFormControlSelect1">No. of guests</label>
                             <select class="form-control" id="exampleFormControlSelect1">
                               <option>1</option>
                               <option>2</option>
@@ -183,8 +186,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlSelect2">Example multiple select</label>
-                            <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <label for="exampleFormControlSelect2">No. of nights</label>
+                            <select class="form-control" id="exampleFormControlSelect2">
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
@@ -192,21 +195,25 @@
                           <option>5</option>
                         </select>
                         </div>
+                        <div class="input-group input-daterange">
+                                <input type="text" class="form-control" value="2012-04-05">
+                                <div class="input-group-addon">to</div>
+                                <input type="text" class="form-control" value="2012-04-19">
+                        </div>
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Example textarea</label>
+                            <label for="exampleFormControlTextarea1">Special Requests</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary">Book!</button>
                 </div>
             </div>
         </div>
     </div>
     <footer>
-
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

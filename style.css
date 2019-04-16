@@ -161,3 +161,21 @@ ul {
 .thumbnail {
     height: 30%;
 }
+
+/*---------------------------------------------- other pages --*/
+
+.whitton-container {
+    padding: 10px 10px 10px 20px;
+}
+
+.dales-container {
+    padding: 10px;
+}
+
+.gallery-container {
+    margin-top: 20px;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 10px 5px 5px grey;
+    
+}

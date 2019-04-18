@@ -27,7 +27,7 @@
 
 
 /*---------------------------------------------- heading --*/
-.logo {
+.logo-home {
     background: url("../assets/images/master.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -36,9 +36,39 @@
     transition: all .5s ease-in-out;
 }
 
+.logo-ammenities {
+    background: url("../assets/images/lounge.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-in-out;
+}
+    
+.logo-local {
+    background: url("../assets/images/villiage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-in-out;    
+}
+
+.logo-gallery {
+    background: url("../assets/images/villiage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-in-out;    
+}
+
 .menucontainer {
     font-size: 0;
     color: black;
+    margin-top: 0;
+    padding-top: 0;
+    
 }    
 
 .top-page {
@@ -57,22 +87,19 @@
 }
 
 .menuitem {
-    min-height: 80px;
+    min-height: 40px;
     width: 20%;
-    color: #fff;
+    color: black;
     font-size: small;
     border: 0;
     margin: 0;
+    height: 120px;
+    text-align: center;
+    padding: 0;
 }
 
 .fa {
     color: black;
-}
-
-.menuitem {
-    height: 120px;
-    text-align: center;
-    padding: 0;
 }
 
 .menuitem a {
@@ -119,32 +146,41 @@
     border-radius: 50%;
     background-color: red;
     text-align: center;
-    color: black;
+    color: white;
     border-color: black;
     max-height: 100px;
-    position: fixed;
-    top: 100px;
-    z-index: +1;
     float: right;
+    position: fixed;
+    z-index: +1000;
 }
 
 /*---------------------------------------------- sections home --*/
 
 
 .booking-form {
-    position: sticky;
     background-color: #f3f1ed;
     padding: 25px;
 }
 
-.home-container {
-    padding: 25px;
+.home-container:not(:last-child) {
+    padding: 25px 25px 0px 25px;
     background-color: white;
 }
 
-.reviews {
-    background-color: white;
+.home-list {
+    text-align: left;
 }
+
+.reviews {
+    padding: 0px;
+}
+
+.blockquote {
+    background-color: #f3f1ed;
+    padding: 10px;
+    font-size: 1em;
+}
+
 
 .navbar-list {
     display: inline;
@@ -164,6 +200,18 @@ ul {
 
 /*---------------------------------------------- other pages --*/
 
+.cosy-container {
+    padding: 25px;
+}
+
+.cosy-list {
+    padding: 0px 10px 5px 20px;
+}
+
+.cosy-list-box {
+    background-color: #f3f1ed;
+}
+
 .whitton-container {
     padding: 10px 10px 10px 20px;
 }
@@ -178,4 +226,25 @@ ul {
     border: 2px solid black;
     box-shadow: 10px 5px 5px grey;
     
+}
+
+.sticky-RHS {
+    position: sticky;
+    top: 0;
+}
+
+.guide {
+    max-height: 780px;
+    overflow-y: scroll;
+    float: right;
+}
+
+/*---------------------------------------------- footer --*/
+
+footer {
+    background-color: #f3f1ed;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }

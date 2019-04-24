@@ -11,7 +11,7 @@ aimed at enticing user to book the cottage for a holiday.
 
 
 
-####UX
+#### UX
 
 My idea was to make it familiar for users as it is similar to an Air BNB page, yet I have put my own design into it. 
 The page is designed to allow people to book easily while also selling the experience of cottage life, the town and the surrounding areas.
@@ -27,7 +27,7 @@ As I started to develope the page a made some changes to this.
 
 https://balsamiq.cloud/skog808/pjinvz2/r9648
 
-####Technologies
+#### Technologies
 
 HTML
 CSS
@@ -36,7 +36,7 @@ Bootstrap - booking modal, review section, alert box
 Font Awesome - all icons
 Hover.css - for Nav bar items and images
 
-####Features
+#### Features
 
 Index page - The first page the user sees. The icon image is the biggest selling point. Here it is the ,master bedroom. 
 I porposefully did not uses the outside image as this isn't a great selling point. 
@@ -50,28 +50,28 @@ The middle section gives the essentials for a user looking for accomadation. Onc
 Checking out positive reviews and how to get there through the map.  
 
 On the left hand side are the images so they can see at a quick glance the different rooms, these pop out as the user hovers over them. 
-Ont the right is a quick form to check availbility fot the dates the user is looking to book. No commitment needed, just a quichk alert 
+Ont the right is a quick form to check availbility fot the dates the user is looking to book. No commitment needed, just a quick alert 
 stating if the cottage is already booked. In future versions this would be linked to a booking database or the owner gets a email to check.
 The call to action comes in the next button, by pressing this a modal appears for the user to fill out to book. These details would save 
-on a booking database and the owner alerted.
+on a booking database and the owner alerted. For the moment though this button does nothing.
 
 The red bubble on the far right is there to make an obvious selling point, it is designed to be the same colour as the booking button. 
 
-In the footer gives an opportunity for the user to email the owner directly for more information.
+In the footer a link gives an opportunity for the user to email the owner directly for more information.
 
 As the user navigates to the other pages the layout remains the same and familiar. The main information on the amenities comes up in the "Good Life". 
 This is what the typical user would look for next in booking a property. 
 
 On the local guide page the images change to represent the local attractions. There is a quick passage to read for those who would like 
 to understand what a typical day in the Dales is like and what the area offers. All with handy stylish links to make any bookings or to 
-just learn more about the area.
+just learn more about the area. This is intended to make the user imagine they are in the Dales, hiking through the country side, 
+have a pint in the pub and comiong home to a warm cosy cottage.
 
-The great views page has all the images in one place. This is handy in the mobile view as they do not show. 
+The 'great views'page has all the images in one place. This is handy in the mobile view as they do not show otherwise.
 This means the loading time on the other pages is quicker on mobile.
   
-Booking modal, hover effects, mobile first.
 
-####Testing
+#### Testing
 
 Heavy use of dev tools on Chrome.
 Alot of issues with padding and margins needed ironing out.
@@ -80,7 +80,7 @@ The Nav bar caused some problems when on mobile size screen. I wanted it to stay
 I had to do a duplicate code which dissapears whe not needed. Otherwise the heading would sit above the bar when scrolling down.
 Tested each page and button for functionality. 
 
-####Credits
+#### Credits
 
 Some code was copied and pasted with some changes by me:
 

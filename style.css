@@ -33,7 +33,7 @@
 /*---------------------------------------------- logo pictures --*/
 
 .logo-home {
-    background: url("../assets/images/master.jpg");
+    background: url("assets/images/master.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,7 +42,7 @@
 }
 
 .logo-ammenities {
-    background: url("../assets/images/lounge.jpg");
+    background: url("assets/images/lounge.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,7 +51,7 @@
 }
     
 .logo-local {
-    background: url("../assets/images/bolton.jpg");
+    background: url("assets/images/bolton.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,7 +60,7 @@
 }
 
 .logo-gallery {
-    background: url("../assets/images/villiage.jpg");
+    background: url("assets/images/villiage.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

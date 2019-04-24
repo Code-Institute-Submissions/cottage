@@ -8,6 +8,7 @@
 
 .ui-menu-color-book {
     background-color: #f3f1ed;
+    font-weight: bold;
 }
 
 .bg-color-name-title {
@@ -22,18 +23,15 @@
         top: 0;
         display: inline;
     }
-    
     .menucontainer {
-        position: absolute;
+        z-index: 1000;
+        position: relative;
+        top: 0;
     }
-    
-    
 }
 
-
-
-
 /*---------------------------------------------- logo pictures --*/
+
 .logo-home {
     background: url("../assets/images/master.jpg");
     background-position: center;
@@ -77,8 +75,7 @@
     color: black;
     margin-top: 0;
     padding-top: 0;
-    
-}    
+} 
 
 .top-page {
     background-image: url("../assets/images/yorkshire2.jpg");
@@ -105,6 +102,12 @@
     height: 40px;
     text-align: center;
     padding: 0;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+#book-now {
+    padding-right: 10px;
 }
 
 .fa {
@@ -135,6 +138,10 @@
     letter-spacing: 2px;
 }
 
+#book-now {
+    font-weight: bold;
+}
+
 .list-inline-item:not(:last-child) {
     margin: 0;
     padding: 0;
@@ -154,7 +161,7 @@
 .price {
     border-radius: 20%;
     color: white;
-    max-height: 100px;
+    max-height: 120px;
     float: right;
     position: sticky;
     z-index: +1;
@@ -171,16 +178,6 @@
     margin-top: 0px;
 }
 
-
-/*---------------------------------------------- nav bar button --*/
-.navDefault {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #4a4a4f;
-}
-
 button {
     border: none;
     background-color: #0997d3;
@@ -191,48 +188,6 @@ button {
     cursor: pointer;
 }
 
-.dropdownMenu{
-    list-style: none;
-    margin:0;
-    padding: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50px;
-    z-index: -1;
-    width: 150px;
-    text-align: center;
-    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
-    transform: translateY(-100%);
-    transition: transform .5s ease-in-out;
-}
-
-.dropdownLink {
-    text-decoration: none;
-    display: block;
-    background-color: #f9f9f9;
-    color: #4a4a4f;
-    padding: 10px 5px;
-    transition: background-color .5s ease-in-out, color .5s ease-in-out;
-}
-
-.dropdownLink:hover {
-    color: #fff;
-    background-color: #a0a0a3;
-}
-
-.dropdown {
-    width: 150px;
-    position: relative;
-}
-
-.dropdown:hover button {
-    background-color: #018ec5;
-}
-
-.dropdown:hover .dropdownMenu {
-    transform: translateY(0);
-}
 
 /*---------------------------------------------- sections home --*/
 
@@ -272,6 +227,12 @@ button {
 
 ul {
   list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.home-list {
+    padding-left: 40px;
 }
 
 .thumbnail {
@@ -279,6 +240,18 @@ ul {
 }
 
 /*---------------------------------------------- other pages --*/
+
+.date-left {
+    margin-right: 20px;
+}
+
+.date-right {
+    margin-left: 20px;
+}
+
+.form-group {
+    margin-top: 20px;
+}
 
 .cosy-container {
     padding: 25px;
@@ -290,6 +263,11 @@ ul {
 
 .cosy-list-box {
     background-color: #f3f1ed;
+    padding: 5px 5px 10px 10px; 
+}
+
+.cosy-list-line {
+    margin: 7px auto;
 }
 
 .whitton-container {
@@ -340,7 +318,7 @@ a:hover {
 }
 
 a:active {
-  color: yellow;
+  color: indigo;
   background-color: transparent;
   text-decoration: none;
 }
@@ -350,8 +328,12 @@ a:active {
 footer {
     background-color: #99BDCD;
     color: black;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
     margin-top: 20px;
     text-align: center;
+}
+
+.fluid-container {
+    padding-top: 10px;
 }

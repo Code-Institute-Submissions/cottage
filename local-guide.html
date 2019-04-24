@@ -34,7 +34,7 @@
                             <a href="gallery.html" class="hvr-pulse-grow"><i class="fa fa-images d-none d-md-block" aria-hidden="true"></i><span>Great views</span></a>
                         </li>
                         <li class="col-6 col-sm-3 ui-menu-color-book list-inline-item menuitem">
-                            <a href="#bookNow" data-toggle="modal" class="hvr-pulse-grow"><i class="fa fa-calendar-alt d-none d-md-block" aria-hidden="true"></i><span>Book Now</span></a>
+                            <a href="#bookNow" data-toggle="modal" class="hvr-pulse-grow"><i class="fa fa-calendar-alt d-none d-md-block" aria-hidden="true"></i><span id="book-now">Book Now</span></a>
                         </li>
                     </ol>
                 </div>
@@ -101,7 +101,7 @@
         <!-----------------------------------------------------------------middle content-->
 
         <div class="whitton-container col-md-4">
-            <div class="guide">
+            <div class="dales-container">
                 <div class="row no-gutters">
                     <h3>A Yorkshire Village</h3>
                     <p>Situated perfectly in the heart of <a href="https://en.wikipedia.org/wiki/West_Witton" target="_blank">West Witton</a>, a quaint village remained unchanged for decades, stands Loaning Cottage. </p>
@@ -127,13 +127,13 @@
                         where you can join the locals for a cream tea in <a href="https://pennygarthcafe.co.uk/" target="_blank">Penny Garth Cafe</a>.</p>
                     <p>Any trip to Hawes must include a visit to the world famous <a href="https://www.wensleydale.co.uk/" target="_blank">Wensleydale Creamery</a>. Try a sample of over 70 cheeses and goes without saying to try Wensleydale with cranberries
                         and a slice of fruit cake.</p>
-                    <p>Back in West Whitton an absolute gem of a restaurant awaits you in <a href="https://www.wensleydaleheifer.co.uk/" target="_blank">'The Heifer'</a>. Be sure to book yourself in for an evening meal. Serving up the very best of the local
+                    <p>Back in West Witton an absolute gem of a restaurant awaits you in <a href="https://www.wensleydaleheifer.co.uk/" target="_blank">'The Heifer'</a>. Be sure to book yourself in for an evening meal. Serving up the very best of the local
                         ingredients </p>
                 </div>
             </div>
         </div>
         <!-----------------------------------------------------------------RHS booking details-->
-         <div class="col-md-4 d-none d-md-block">
+        <div class="col-md-4 d-none d-md-block">
             <div class="row">
                 <div class="col">
                     <div class="price">
@@ -148,10 +148,10 @@
                         <input type="number" name="Guests:" label="Guests:" placeholder="2" /><br><br> Nights: <br>
                         <input type="number" name="Guests:" label="Guests:" placeholder="2" /><br><br> Check in Date: <br>
                         <div class="input-group input-daterange">
-                            <input type="text" class="form-control" value="2012-04-05">
+                            <input type="text" class="form-control" value="yyyy-mm-dd">
 
                         </div>
-                        <div id="datepicker" data-date="12/03/2012"></div>
+                        <div id="datepicker" data-date="yyyy-mm-dd"></div>
                         <input type="hidden" id="my_hidden_input"><br>
                         <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#alert">Check</button><br>
                         <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#bookNow">Book Now!</button><br><br>
@@ -165,81 +165,81 @@
             </div>
         </div>
         <!-----------------------------------------------------------------booking modal-->
-   
-    <div class="modal" tabindex="-1" role="dialog" id="bookNow">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Booking Details</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+        <div class="modal" tabindex="-1" role="dialog" id="bookNow">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Booking Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for=" exampleFormControlInput1 ">Email address</label>
-                            <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
-                        </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlSelect1 ">No. of guests</label>
-                            <select class="form-control " id="exampleFormControlSelect1 ">
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for=" exampleFormControlInput1 ">Email address</label>
+                                <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
+                            </div>
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect1 ">No. of guests</label>
+                                <select class="form-control " id="exampleFormControlSelect1 ">
                               <option>1</option>
                               <option>2</option>
                               <option>3</option>
                               <option>4</option>
                               <option>5</option>
                             </select>
-                        </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlSelect2 ">No. of nights</label>
-                            <select class="form-control " id="exampleFormControlSelect2 ">
+                            </div>
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect2 ">No. of nights</label>
+                                <select class="form-control " id="exampleFormControlSelect2 ">
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
                           <option>4</option>
                           <option>5</option>
                         </select>
-                        </div>
-                        <div class="input-group input-daterange ">
-                            <input type="text " class="form-control " value="2012-04-05 ">
-                            <div class="input-group-addon ">to</div>
-                            <input type="text " class="form-control " value="2012-04-19 ">
-                        </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlTextarea1 ">Special Requests</label>
-                            <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer ">
-                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
-                    <button type="button " class="btn btn-primary ">Book!</button>
+                            </div>
+                            <div class="input-group input-daterange ">
+                                <input type="text " class="form-control date-left " value="yyyy-mm-dd ">
+                                <div class="input-group-addon ">to</div>
+                                <input type="text " class="form-control date-right" value="yyyy-mm-dd ">
+                            </div>
+                            <div class="form-group ">
+                                <label for="exampleFormControlTextarea1 ">Special Requests</label>
+                                <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer ">
+                        <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                        <button type="button " class="btn btn-primary ">Book!</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-----------------------------------------------------------------availbility modal-->  
-    <div class="modal " tabindex="-1 " role="dialog " id="alert">
-  <div class="modal-dialog " role="document ">
-    <div class="modal-content ">
-      <div class="modal-header ">
-        <h5 class="modal-title ">A message from Fiona...</h5>
-        <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+        <!-----------------------------------------------------------------availbility modal-->
+        <div class="modal " tabindex="-1 " role="dialog " id="alert">
+            <div class="modal-dialog " role="document ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title ">A message from Fiona...</h5>
+                        <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
           <span aria-hidden="true ">&times;</span>
         </button>
-      </div>
-      <div class="modal-body ">
-        <p>Yes! We have availbility for your holiday. Click Book Now!</p>
-      </div>
-      <div class="modal-footer ">
-        <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
- </section>
-<footer class="fluid-container ">
+                    </div>
+                    <div class="modal-body ">
+                        <p>Yes! We have availbility for your holiday. Click Book Now!</p>
+                    </div>
+                    <div class="modal-footer ">
+                        <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="fluid-container ">
         <div class="row ">
             <div class="col-12 ">
                 <div class="footer ">
@@ -248,15 +248,15 @@
                     <ul class="unstyled ">
                         <li><i class="fa fa-user " aria-hidden="true "></i> Fiona Brennan</li>
                         <li><i class="fa fa-phone " aria-hidden="true "></i> 00353 87 2903499</li>
-                        <li><i class="fa fa-envelope " aria-hidden="true "></i> <a href="" target="_blank">info@holidayhouseyorkshire.com</a></li>
-                        <li><i class="fa fa-map " aria-hidden="true "></i> Loaning Cottage, West Whitton, Yorkshire</li>
+                        <li><i class="fa fa-envelope " aria-hidden="true "></i> <a href="mailto:name@mydomain.com" target="_blank">info@holidayhouseyorkshire.com</a></li>
+                        <li><i class="fa fa-map " aria-hidden="true "></i> Loaning Cottage, West Witton, Yorkshire</li>
                     </ul>
                 </div>
             </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</footer>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </footer>
 </body>
 </style>
 

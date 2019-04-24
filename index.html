@@ -35,9 +35,10 @@
                             <a href="gallery.html" class="hvr-pulse-grow"><i class="fa fa-images d-none d-md-block" aria-hidden="true"></i><span>Great views</span></a>
                         </li>
                         <li class="col-6 col-sm-3 ui-menu-color-book list-inline-item menuitem">
-                            <a href="#bookNow" data-toggle="modal" class="hvr-pulse-grow"><i class="fa fa-calendar-alt d-none d-md-block" aria-hidden="true"></i><span>Book Now</span></a>
+                            <a href="#bookNow" data-toggle="modal" class="hvr-pulse-grow"><i class="fa fa-calendar-alt d-none d-md-block" aria-hidden="true"></i><span id="book-now">Book Now</span></a>
                         </li>
                     </ol>
+
                 </div>
                 <!-----------------------------------------------------------------Heading of page-->
             </div>
@@ -115,16 +116,16 @@
                 <div class="col-12">
                     <h3>Reviews</h3>
                     <blockquote class="blockquote">
-                        <p class="mb-0">Had an absolutley brilliant time in Loaning cottage. Great location to walk Penn Hill from, and cosy fire to warm up to.</p>
-                        <footer class="blockquote-footer">James from<cite title="Source Title"> London</cite></footer>
+                        <p class="mb-0">Had an absolutley brilliant time in Loaning cottage. Great location to walk Pen Hill from, and cosy fire to warm up to.</p>
+                        <div class="blockquote-footer">James from<cite title="Source Title"> London</cite></div>
                     </blockquote>
                     <blockquote class="blockquote">
                         <p class="mb-0">Lovely clean cottage, lovely village.</p>
-                        <footer class="blockquote-footer">Mary from<cite title="Source Title"> Galway</cite></footer>
+                        <div class="blockquote-footer">Mary from<cite title="Source Title"> Galway</cite></div>
                     </blockquote>
                     <blockquote class="blockquote">
                         <p class="mb-0">The cottage was warm and cosy. The village is beautiful and enchanting.</p>
-                        <footer class="blockquote-footer">Carol from<cite title="Source Title"> Cardiff</cite></footer>
+                        <div class="blockquote-footer">Carol from<cite title="Source Title"> Cardiff</cite></div>
                     </blockquote>
                     <hr>
                 </div>
@@ -146,10 +147,10 @@
                         <input type="number" name="Guests:" label="Guests:" placeholder="2" /><br><br> Nights: <br>
                         <input type="number" name="Guests:" label="Guests:" placeholder="2" /><br><br> Check in Date: <br>
                         <div class="input-group input-daterange">
-                            <input type="text" class="form-control" value="2012-04-05">
+                            <input type="text" class="form-control" value="yyyy-mm-dd">
 
                         </div>
-                        <div id="datepicker" data-date="12/03/2012"></div>
+                        <div id="datepicker" data-date="yyyy-mm-dd"></div>
                         <input type="hidden" id="my_hidden_input"><br>
                         <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#alert">Check</button><br>
                         <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#bookNow">Book Now!</button><br><br>
@@ -200,9 +201,9 @@
                                     </select>
                             </div>
                             <div class="input-group input-daterange ">
-                                <input type="text " class="form-control " value="2012-04-05 ">
+                                <input type="text " class="form-control date-left" value="yyyy-mm-dd ">
                                 <div class="input-group-addon ">to</div>
-                                <input type="text " class="form-control " value="2012-04-19 ">
+                                <input type="text " class="form-control date-right" value="yyyy-mm-dd ">
                             </div>
                             <div class="form-group ">
                                 <label for="exampleFormControlTextarea1 ">Special Requests</label>
@@ -239,17 +240,17 @@
         </div>
     </section>
     <!-----------------------------------------------------------------footer-->
-    <footer class="fluid-container ">
-        <div class="row ">
-            <div class="col-12 ">
-                <div class="footer ">
+    <footer class="fluid-container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer">
                     <h4>Contact Details:</h4>
 
                     <ul class="unstyled ">
                         <li><i class="fa fa-user " aria-hidden="true "></i> Fiona Brennan</li>
                         <li><i class="fa fa-phone " aria-hidden="true "></i> 00353 87 2903499</li>
-                        <li><i class="fa fa-envelope " aria-hidden="true "></i> <a href=" " target="_blank ">info@holidayhouseyorkshire.com</a></li>
-                        <li><i class="fa fa-map " aria-hidden="true "></i> Loaning Cottage, West Whitton, Yorkshire</li>
+                        <li><i class="fa fa-envelope " aria-hidden="true "></i> <a href="mailto:name@mydomain.com" target="_blank ">info@holidayhouseyorkshire.com</a></li>
+                        <li><i class="fa fa-map " aria-hidden="true "></i> Loaning Cottage, West Witton, Yorkshire</li>
                     </ul>
                 </div>
             </div>

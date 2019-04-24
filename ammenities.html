@@ -34,7 +34,7 @@
                             <a href="gallery.html" class="hvr-pulse-grow"><i class="fa fa-images d-none d-md-block" aria-hidden="true"></i><span>Great views</span></a>
                         </li>
                         <li class="col-6 col-sm-3 ui-menu-color-book list-inline-item menuitem">
-                            <a href="#bookNow" data-toggle="modal" class="hvr-pulse-grow"><i class="fa fa-calendar-alt d-none d-md-block" aria-hidden="true"></i><span>Book Now</span></a>
+                            <a href="#bookNow" data-toggle="modal" class="hvr-pulse-grow"><i class="fa fa-calendar-alt d-none d-md-block" aria-hidden="true"></i><span id="book-now">Book Now</span></a>
                         </li>
                     </ol>
                 </div>
@@ -45,7 +45,7 @@
                     <h1 class="name">Traditional Yorkshire cottage</h1>
                     <h2 class="phrase">with all the comforts of home</h2>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -107,34 +107,34 @@
             </div>
 
             <ul class="unstyled cosy-list">
-                
-                    <h5>Keeping it cosy...</h5>
-                    <div class="cosy-list-box">
-                    <li><i class="fa fa-fire" aria-hidden="true"></i> Fully functioning fireplace with fuel</li>
-                    <li><i class="fa fa-water" aria-hidden="true"></i> Hot water by immersion & boiler</li>
-                    <li><i class="fa fa-shower" aria-hidden="true"></i> Electric shower</li>
-                    <li><i class="fa fa-bread-slice" aria-hidden="true"></i> Toaster over</li>
-                    <li><i class="fa fa-mug-hot" aria-hidden="true"></i> Kettle and espresso machine</li>
+
+                <h5>Keeping it cosy...</h5>
+                <div class="cosy-list-box">
+                    <li><i class="fa fa-fire cosy-list-line" aria-hidden="true"></i> Fully functioning fireplace with fuel</li>
+                    <li><i class="fa fa-water cosy-list-line" aria-hidden="true"></i> Hot water by immersion & boiler</li>
+                    <li><i class="fa fa-shower cosy-list-line" aria-hidden="true"></i> Electric shower</li>
+                    <li><i class="fa fa-bread-slice cosy-list-line" aria-hidden="true"></i> Toaster over</li>
+                    <li><i class="fa fa-mug-hot cosy-list-line" aria-hidden="true"></i> Kettle and espresso machine</li>
                 </div>
                 <hr>
-                
-                    <h5>Cottage-life essentials...</h5>
-                    <div class="cosy-list-box">
-                    <li><i class="fa fa-parking" aria-hidden="true"></i> Parking available</li>
-                    <li><i class="fa fa-wifi" aria-hidden="true"></i> Wifi/Internet</li>
-                    <li><i class="fa fa-mitten" aria-hidden="true"></i> Modern 4 ring cooker with grill and oven</li>
-                    <li><i class="fa fa-icicles" aria-hidden="true"></i> Fridge/freezer with ice compartment</li>
-                    <li><i class="fa fa-tshirt" aria-hidden="true"></i> Washer Dryer</li>
-                    <li><i class="fa fa-blender" aria-hidden="true"></i> Cooking equipment</li>
+
+                <h5>Cottage-life essentials...</h5>
+                <div class="cosy-list-box">
+                    <li><i class="fa fa-parking cosy-list-line" aria-hidden="true"></i> Parking available</li>
+                    <li><i class="fa fa-wifi cosy-list-line" aria-hidden="true"></i> Wifi/Internet</li>
+                    <li><i class="fa fa-mitten cosy-list-line" aria-hidden="true"></i> Modern 4 ring cooker with grill and oven</li>
+                    <li><i class="fa fa-icicles cosy-list-line" aria-hidden="true"></i> Fridge/freezer with ice compartment</li>
+                    <li><i class="fa fa-tshirt cosy-list-line" aria-hidden="true"></i> Washer Dryer</li>
+                    <li><i class="fa fa-blender cosy-list-line" aria-hidden="true"></i> Cooking equipment</li>
                 </div>
                 <hr>
-                
-                    <h5>After a long day of hiking...</h5>
-                    <div class="cosy-list-box">
-                    <li><i class="fa fa-bolt" aria-hidden="true"></i> Microwave</li>
-                    <li><i class="fa fa-tv" aria-hidden="true"></i> 50 inch flat screen TV</li>
-                    <li><i class="fa fa-film" aria-hidden="true"></i> DVD player with a selection of movies</li>
-                    <li><i class="fa fa-chess-knight" aria-hidden="true"></i> Selection of board games</li>
+
+                <h5>After a long day of hiking...</h5>
+                <div class="cosy-list-box">
+                    <li><i class="fa fa-bolt cosy-list-line" aria-hidden="true"></i> Microwave</li>
+                    <li><i class="fa fa-tv cosy-list-line" aria-hidden="true"></i> 50 inch flat screen TV</li>
+                    <li><i class="fa fa-film cosy-list-line" aria-hidden="true"></i> DVD player with a selection of movies</li>
+                    <li><i class="fa fa-chess-knight cosy-list-line" aria-hidden="true"></i> Selection of board games</li>
                 </div>
             </ul>
 
@@ -143,7 +143,7 @@
         </div>
         </div>
         <!-----------------------------------------------------------------RHS booking details-->
-         <div class="col-md-4 d-none d-md-block">
+        <div class="col-md-4 d-none d-md-block">
             <div class="row">
                 <div class="col">
                     <div class="price">
@@ -158,10 +158,10 @@
                         <input type="number" name="Guests:" label="Guests:" placeholder="2" /><br><br> Nights: <br>
                         <input type="number" name="Guests:" label="Guests:" placeholder="2" /><br><br> Check in Date: <br>
                         <div class="input-group input-daterange">
-                            <input type="text" class="form-control" value="2012-04-05">
+                            <input type="text" class="form-control" value="yyyy-mm-dd">
 
                         </div>
-                        <div id="datepicker" data-date="12/03/2012"></div>
+                        <div id="datepicker" data-date="yyyy-mm-dd"></div>
                         <input type="hidden" id="my_hidden_input"><br>
                         <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#alert">Check</button><br>
                         <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#bookNow">Book Now!</button><br><br>
@@ -175,81 +175,81 @@
             </div>
         </div>
         <!-----------------------------------------------------------------booking modal-->
-    
-    <div class="modal" tabindex="-1" role="dialog" id="bookNow">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Booking Details</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+        <div class="modal" tabindex="-1" role="dialog" id="bookNow">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Booking Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for=" exampleFormControlInput1 ">Email address</label>
-                            <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
-                        </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlSelect1 ">No. of guests</label>
-                            <select class="form-control " id="exampleFormControlSelect1 ">
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for=" exampleFormControlInput1 ">Email address</label>
+                                <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
+                            </div>
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect1 ">No. of guests</label>
+                                <select class="form-control " id="exampleFormControlSelect1 ">
                               <option>1</option>
                               <option>2</option>
                               <option>3</option>
                               <option>4</option>
                               <option>5</option>
                             </select>
-                        </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlSelect2 ">No. of nights</label>
-                            <select class="form-control " id="exampleFormControlSelect2 ">
+                            </div>
+                            <div class="form-group ">
+                                <label for="exampleFormControlSelect2 ">No. of nights</label>
+                                <select class="form-control " id="exampleFormControlSelect2 ">
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
                           <option>4</option>
                           <option>5</option>
                         </select>
-                        </div>
-                        <div class="input-group input-daterange ">
-                            <input type="text " class="form-control " value="2012-04-05 ">
-                            <div class="input-group-addon ">to</div>
-                            <input type="text " class="form-control " value="2012-04-19 ">
-                        </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlTextarea1 ">Special Requests</label>
-                            <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer ">
-                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
-                    <button type="button " class="btn btn-primary ">Book!</button>
+                            </div>
+                            <div class="input-group input-daterange ">
+                                <input type="text " class="form-control date-left" value="yyyy-mm-dd ">
+                                <div class="input-group-addon ">to</div>
+                                <input type="text " class="form-control date-right" value="yyyy-mm-dd ">
+                            </div>
+                            <div class="form-group ">
+                                <label for="exampleFormControlTextarea1 ">Special Requests</label>
+                                <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer ">
+                        <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                        <button type="button " class="btn btn-primary ">Book!</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-----------------------------------------------------------------availbility modal-->  
-    <div class="modal " tabindex="-1 " role="dialog " id="alert">
-  <div class="modal-dialog " role="document ">
-    <div class="modal-content ">
-      <div class="modal-header ">
-        <h5 class="modal-title ">A message from Fiona...</h5>
-        <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+        <!-----------------------------------------------------------------availbility modal-->
+        <div class="modal " tabindex="-1 " role="dialog " id="alert">
+            <div class="modal-dialog " role="document ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title ">A message from Fiona...</h5>
+                        <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
           <span aria-hidden="true ">&times;</span>
         </button>
-      </div>
-      <div class="modal-body ">
-        <p>Yes! We have availbility for your holiday. Click Book Now!</p>
-      </div>
-      <div class="modal-footer ">
-        <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<footer class="fluid-container ">
+                    </div>
+                    <div class="modal-body ">
+                        <p>Yes! We have availbility for your holiday. Click Book Now!</p>
+                    </div>
+                    <div class="modal-footer ">
+                        <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="fluid-container ">
         <div class="row ">
             <div class="col-12 ">
                 <div class="footer ">
@@ -258,8 +258,8 @@
                     <ul class="unstyled ">
                         <li><i class="fa fa-user " aria-hidden="true "></i> Fiona Brennan</li>
                         <li><i class="fa fa-phone " aria-hidden="true "></i> 00353 87 2903499</li>
-                        <li><i class="fa fa-envelope " aria-hidden="true "></i> <a href="" target="_blank">info@holidayhouseyorkshire.com</a></li>
-                        <li><i class="fa fa-map " aria-hidden="true "></i> Loaning Cottage, West Whitton, Yorkshire</li>
+                        <li><i class="fa fa-envelope " aria-hidden="true "></i> <a href="mailto:name@mydomain.com" target="_blank">info@holidayhouseyorkshire.com</a></li>
+                        <li><i class="fa fa-map " aria-hidden="true "></i> Loaning Cottage, West Witton, Yorkshire</li>
                     </ul>
                 </div>
             </div>

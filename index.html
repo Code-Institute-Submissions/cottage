@@ -14,13 +14,34 @@
 
 <body>
     <!-----------------------------------------------------------------Main Picture-->
-    <div class="row no-gutters top-page">
+    <div class="row no-gutters">
+
+        <ol id="nav" class="list-inline menucontainer d-block d-sm-none">
+
+            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
+                <a href="index.html" class="hvr-pulse-grow"><i class="fa fa-home d-none d-md-block" aria-hidden="true"></i><span>Your Home</span></a>
+            </li>
+            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
+                <a href="ammenities.html" class="hvr-pulse-grow"><i class="fa fa-tv d-none d-md-block" aria-hidden="true"></i><span>Good Life</span></a>
+            </li>
+            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
+                <a href="local-guide.html" class="hvr-pulse-grow"><i class="fa fa-camera d-none d-md-block" aria-hidden="true"></i><span>Local Guide</span></a>
+            </li>
+            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
+                <a href="gallery.html" class="hvr-pulse-grow"><i class="fa fa-images d-none d-md-block" aria-hidden="true"></i><span>Great views</span></a>
+            </li>
+            <li class="col-6 col-sm-3 ui-menu-color-book list-inline-item menuitem">
+                <a href="#bookNow" data-toggle="modal" class="hvr-pulse-grow"><i class="fa fa-calendar-alt d-none d-md-block" aria-hidden="true"></i><span id="book-now">Book Now</span></a>
+            </li>
+        </ol>
+        <div class="top-page">
+        </div>
         <a class="col-md-4 logo-home" href="../index.html"></a>
 
         <!-----------------------------------------------------------------menu-->
         <div class="col-md-8">
             <div class="row no-gutters">
-                <div class="col">
+                <div class="col d-none d-md-block">
                     <ol id="nav" class="list-inline menucontainer">
                         <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
                             <a href="index.html" class="hvr-pulse-grow"><i class="fa fa-home d-none d-md-block" aria-hidden="true"></i><span>Your Home</span></a>
@@ -177,12 +198,12 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label for=" exampleFormControlInput1">Email address</label>
+                                <label for="exampleFormControlInput1">Email address</label>
                                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                             </div>
-                            <div class="form-group ">
-                                <label for="exampleFormControlSelect1 ">No. of guests</label>
-                                <select class="form-control " id="exampleFormControlSelect1 ">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">No. of guests</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -190,9 +211,9 @@
                                         <option>5</option>
                                     </select>
                             </div>
-                            <div class="form-group ">
-                                <label for="exampleFormControlSelect2 ">No. of nights</label>
-                                <select class="form-control " id="exampleFormControlSelect2 ">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect2">No. of nights</label>
+                                <select class="form-control" id="exampleFormControlSelect2">
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -200,40 +221,40 @@
                                        <option>5</option>
                                     </select>
                             </div>
-                            <div class="input-group input-daterange ">
-                                <input type="text " class="form-control date-left" value="yyyy-mm-dd ">
-                                <div class="input-group-addon ">to</div>
-                                <input type="text " class="form-control date-right" value="yyyy-mm-dd ">
+                            <div class="input-group input-daterange">
+                                <input type="text" class="form-control date-left" value="yyyy-mm-dd">
+                                <div class="input-group-addon">to</div>
+                                <input type="text" class="form-control date-right" value="yyyy-mm-dd">
                             </div>
-                            <div class="form-group ">
-                                <label for="exampleFormControlTextarea1 ">Special Requests</label>
-                                <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Special Requests</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
                         </form>
                     </div>
-                    <div class="modal-footer ">
-                        <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
-                        <button type="button " class="btn btn-primary ">Book!</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Book!</button>
                     </div>
                 </div>
             </div>
         </div>
         </div>
         <!-----------------------------------------------------------------availbility modal-->
-        <div class="modal " tabindex="-1 " role="dialog " id="alert ">
-            <div class="modal-dialog " role="document ">
-                <div class="modal-content ">
+        <div class="modal" tabindex="-1" role="dialog" id="alert">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
                     <div class="modal-header ">
-                        <h5 class="modal-title ">A message from Fiona...</h5>
-                        <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
-                            <span aria-hidden="true ">&times;</span>
+                        <h5 class="modal-title">A message from Fiona...</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body ">
+                    <div class="modal-body">
                         <p>Yes! We have availbility for your holiday. Click Book Now!</p>
                     </div>
-                    <div class="modal-footer ">
-                        <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>

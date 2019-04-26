@@ -1,6 +1,7 @@
 ### My first milestone project
+---
 
-This is my milestone project which is a web page for renting a cottage in the Yorkshire dales.
+This is my milestone project which is a web page for renting a cottage in the Yorkshire dales, you can check it out here: https://bandyp.github.io/cottage/
 
 The original website is here http://holidayhouseyorkshire.com/. I felt I could do a better job of it. It was both a way to practise and to learn about 
 the tech out there to help build websites, as well as building a functional page. While not intended for comercial use, 
@@ -12,6 +13,7 @@ aimed at enticing user to book the cottage for a holiday.
 
 
 #### UX
+---
 
 My idea was to make it familiar for users as it is similar to an Air BNB page, yet I have put my own design into it. 
 The page is designed to allow people to book easily while also selling the experience of cottage life, the town and the surrounding areas.
@@ -29,15 +31,20 @@ This made the pages more consistant.
 https://balsamiq.cloud/skog808/pjinvz2/r9648
 
 #### Technologies
+---
 
-HTML
-CSS
-Balsamiq - used for wire frame
-Bootstrap - booking modal, review section, alert box
-Font Awesome - all icons
-Hover.css - for Nav bar items and images
+1. HTML 1
+1. CSS 2
+1. Balsamiq - used for wire frame 3
+1. Bootstrap 4 
+    1.  booking modal 4a
+    1.  review section 4b 
+    1.  alert box 4c
+1. Font Awesome - all icons 5
+1. Hover.css - for Nav bar items and images 6
 
 #### Features
+---
 
 Index page - The first page the user sees. The logo image is the biggest selling point. Here it is the master bedroom. 
 I porposefully did not uses the outside image as this isn't a great selling point, the cottage look far better inside to what it might appear outside.
@@ -72,28 +79,36 @@ The 'great views' page has all the images in one place. This is handy in the mob
 This means the loading time on the other pages is quicker on mobile.
 
 The 'Book Now' in the nav bar also brings up the booking modal. The font is bolder than the rest to make it stand out, as it is the main call to action in the mobile view.
-  
+
+#### Deployment
+---
+
+This website is hosted by GitHub pages. The GitHub link is here: https://github.com/bandyp/cottage . In the initial stages alot of work went into the content and a large physical part of the index page was completed then pushed onto GitHub. 
+After that there uploads were far more frequent.
 
 #### Testing
+---
 
-Heavy use of dev tools on Chrome.
+Heavy use of dev tools on Chrome. 
 Alot of issues with padding and margins needed ironing out.
 Adding in the bootstrap modal form and review section were straight forward.
-The Nav bar caused some problems when on mobile size screen. I wanted it to stay at the top of the screen. 
+The Nav bar caused some problems when on mobile size screen and then on tablet. I wanted it to stay at the top of the screen, or the alignment just become unstuck. 
 I had to do a duplicate code which dissapears when not needed. Otherwise the heading would sit above the bar when scrolling down.
 Tested each page and button for functionality. 
 
 #### Credits
+---
 
 Some code was copied and pasted with some changes by me:
 
-Navigation bar - Code institute
-Photos - My wife took the photos of the cottage. Other photos were from the relative business' websites and tourist boards 
-Icons - FA
-Content - from original page - Terry Brennan; I wrote the guides about the town and the area.
-Reviews from emails suppied by owner Fiona Brennan
-Modal/buttons/reviews - Bootstrap copy and pasted with some alterations to CSS by myself
-Map - google maps
-Hover effects - hover.css
+* Navigation bar - Code institute, from resume project.
+* Photos - My wife took the photos of the cottage. Other photos were from the relative business' websites and tourist boards 
+* Icons - FA
+* Content - from original page - Terry Brennan. I wrote the guides about the town and the area.
+* Reviews from emails suppied by owner Fiona Brennan
+* Modal/buttons/reviews - Bootstrap copy and pasted with some alterations to CSS by myself
+* Map - google maps
+* Hover effects - hover.css
 
 Thank you to my tutor Seun for help, suggestions and encouragement
+---

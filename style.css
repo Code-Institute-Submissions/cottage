@@ -17,7 +17,7 @@
 
 /*---------------------------------------------- media --*/
 
-@media (max-width: 400px) {
+@media (max-width: 576px) {
     .col {
         position: fixed;
         top: 0;
@@ -97,6 +97,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.phrase {
+    padding: 5px;
 }
 
 .menuitem {
@@ -230,6 +234,15 @@ button {
 
 .photo-container {
     padding: 0;
+    max-height: 780px;
+    max-width: 450px;
+
+}
+
+.col-6 {
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
 }
 
 ul {
@@ -243,7 +256,9 @@ ul {
 }
 
 .thumbnail {
-    height: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*---------------------------------------------- other pages --*/
@@ -350,4 +365,9 @@ footer {
 
 .fluid-container {
     padding-top: 10px;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
 }

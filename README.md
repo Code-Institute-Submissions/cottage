@@ -33,15 +33,15 @@ https://balsamiq.cloud/skog808/pjinvz2/r9648
 #### Technologies
 ---
 
-1. HTML 1
-1. CSS 2
-1. Balsamiq - used for wire frame 3
-1. Bootstrap 4 
-    1.  booking modal 4a
-    1.  review section 4b 
-    1.  alert box 4c
-1. Font Awesome - all icons 5
-1. Hover.css - for Nav bar items and images 6
+1. HTML
+1. CSS
+1. Balsamiq - used for wire frame
+1. Bootstrap
+    1.  booking modal
+    1.  review section 
+    1.  alert box
+1. Font Awesome - all icons
+1. Hover.css - for Nav bar items and images
 
 #### Features
 ---
@@ -110,5 +110,5 @@ Some code was copied and pasted with some changes by me:
 * Map - google maps
 * Hover effects - hover.css
 
-Thank you to my tutor Seun for help, suggestions and encouragement
+Thank you to my tutor Seun for help, suggestions and encouragement!
 ---

@@ -1,5 +1,16 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
+.page {
+    position: relative;
+    min-height: 100vh;
+}
 
+.wrapper {
+    padding-bottom: 10rem;
+}
 /*---------------------------------------------- colors --*/
 
 .ui-menu-color-home {
@@ -367,6 +378,7 @@ footer {
     margin-top: 20px;
     text-align: center;
     bottom: 0;
+    height: 10rem;
 }
 
 .fluid-container {

@@ -92,7 +92,7 @@
     text-align: center;
     height: 280px;
     opacity: 20;
-    padding-top: 75px;
+    padding-top: 40px;
     background-image: url("assets/images/yorkshire3.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -235,7 +235,6 @@ button {
 .photo-container {
     padding: 0;
     max-height: 780px;
-    max-width: 450px;
 
 }
 
@@ -359,12 +358,15 @@ a:active {
 /*---------------------------------------------- footer --*/
 
 footer {
+    position: absolute;
+    width: 100%;
     background-color: #99BDCD;
     color: black;
     margin-left: 0;
     margin-right: auto;
     margin-top: 20px;
     text-align: center;
+    bottom: 0;
 }
 
 .fluid-container {

@@ -172,10 +172,10 @@
                 <input type="number" name="Guests:" label="Guests:" placeholder="2" /><br><br> Nights: <br>
                 <input type="number" name="Guests:" label="Guests:" placeholder="2" /><br><br> Check in Date: <br>
                 <div class="input-group input-daterange">
-                    <input type="date" class="form-control" value="yyyy-mm-dd">
+                    <input type="date" class="form-control" value="dd-mm-yyyy">
 
                 </div>
-                <div id="datepicker" data-date="yyyy-mm-dd"></div>
+                <div id="datepicker" data-date="dd/mm/yyyy"></div>
                 <input type="hidden" id="my_hidden_input"><br>
                 <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#alert">Check</button><br>
                 <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#bookNow">Book Now!</button><br><br>
@@ -200,12 +200,12 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label for=" exampleFormControlInput1 ">Email address</label>
-                            <input type="email " class="form-control " id="exampleFormControlInput1 " placeholder="name@example.com ">
+                            <label for=" exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                         </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlSelect1 ">No. of guests</label>
-                            <select class="form-control " id="exampleFormControlSelect1 ">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">No. of guests</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
                               <option>1</option>
                               <option>2</option>
                               <option>3</option>
@@ -213,9 +213,9 @@
                               <option>5</option>
                             </select>
                         </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlSelect2 ">No. of nights</label>
-                            <select class="form-control " id="exampleFormControlSelect2 ">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2">No. of nights</label>
+                            <select class="form-control" id="exampleFormControlSelect2">
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
@@ -223,14 +223,14 @@
                           <option>5</option>
                         </select>
                         </div>
-                        <div class="input-group input-daterange ">
-                            <input type="date" class="form-control date-left" value="yyyy-mm-dd ">
-                            <div class="input-group-addon ">to</div>
-                            <input type="date" class="form-control date-right" value="yyyy-mm-dd ">
+                        <div class="input-group input-daterange">
+                            <input type="date" class="form-control date-left" value="dd/mm/yyyy">
+                            <div class="input-group-addon">to</div>
+                            <input type="date" class="form-control date-right" value="dd/mm/yyyy">
                         </div>
-                        <div class="form-group ">
-                            <label for="exampleFormControlTextarea1 ">Special Requests</label>
-                            <textarea class="form-control " id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Special Requests</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                     </form>
                 </div>
@@ -242,36 +242,36 @@
         </div>
     </div>
     <!-----------------------------------------------------------------availbility modal-->
-    <div class="modal " tabindex="-1 " role="dialog " id="alert">
-        <div class="modal-dialog " role="document ">
-            <div class="modal-content ">
-                <div class="modal-header ">
-                    <h5 class="modal-title ">A message from Fiona...</h5>
+    <div class="modal" tabindex="-1 " role="dialog" id="alert">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">A message from Fiona...</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
                 </div>
-                <div class="modal-body ">
+                <div class="modal-body">
                     <p>Yes! We have availbility for your holiday. Click Book Now!</p>
                 </div>
-                <div class="modal-footer ">
+                <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="fluid-container ">
-        <div class="row ">
-            <div class="col-12 ">
-                <div class="footer ">
+    <footer class="fluid-container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer">
                     <h4>Contact Details:</h4>
 
-                    <ul class="unstyled ">
-                        <li><i class="fa fa-user " aria-hidden="true "></i> Fiona Brennan</li>
-                        <li><i class="fa fa-phone " aria-hidden="true "></i> 00353 87 2903499</li>
-                        <li><i class="fa fa-envelope " aria-hidden="true "></i> <a href="mailto:name@mydomain.com" target="_blank">info@holidayhouseyorkshire.com</a></li>
-                        <li><i class="fa fa-map " aria-hidden="true "></i> Loaning Cottage, West Witton, Yorkshire</li>
+                    <ul class="unstyled">
+                        <li><i class="fa fa-user" aria-hidden="true"></i> Fiona Brennan</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> 00353 87 2903499</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:name@mydomain.com" target="_blank">info@holidayhouseyorkshire.com</a></li>
+                        <li><i class="fa fa-map" aria-hidden="true"></i> Loaning Cottage, West Witton, Yorkshire</li>
                     </ul>
                 </div>
             </div>
@@ -282,6 +282,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
-</style>
 
 </html>

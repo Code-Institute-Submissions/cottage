@@ -101,7 +101,7 @@ Tested each page and button for functionality. The footer caused some issues on 
 
 Some code was copied and pasted with some changes by me:
 
-* Navigation bar - Code institute, from resume project.
+* Navigation bar/logo - Code institute, from resume project.
 * Photos - My wife, Jess,  took the photos of the cottage. Other photos were from the relative business' websites and tourist boards 
 * Icons - FA
 * Content - from original page - Terry Brennan. I wrote the guides about the town and the area.
